@@ -1,0 +1,52 @@
+body::before 
+    {
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(./Girl.jpg) center / cover no-repeat;
+    background-size: cover;
+    filter: blur(5px); /* Размытие */
+    }
+body 
+   {
+    color:black; /* Цвет текста */
+}
+
+ .center
+{
+  background-color: aliceblue;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 0;left: 0;right: 0; bottom:0;
+  margin: auto;
+  filter: blur(0);
+
+}
+.center .image
+{
+    width: 100%;
+    height: auto;
+    
+}
+.position
+{
+    margin: 30px;
+}
+.position h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+span.views
+{
+    display: inline-block;
+    background-color: aqua;
+    background: url(./icons8-обработать-filled-50.png);
+   
+}
