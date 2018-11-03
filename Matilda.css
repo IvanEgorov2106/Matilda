@@ -1,37 +1,32 @@
 body::before 
     {
     content: '';
-    position: fixed; /* Фиксируем на одном месте */
-    left: 0; right: 0; /* Вся ширин */
-    top: 0; bottom: 0; /* Вся высота */
-    z-index: -1; /* Фон ниже текста */
-    /* Параметры фона */
+    position: fixed; 
+    left: 0; right: 0;
+    top: 0; bottom: 0; 
+    
+   
     background: url(picture/Girl.jpg) center / cover no-repeat;
     background-size: cover;
     filter: blur(5px); /* Размытие */
     }
-body 
-   {
-    color:black; /* Цвет текста */
-}
 
  .center
 {
 
     font-family: 'Times New Roman', Times, serif;
     background-color: aliceblue;
-    width: 30%;
+    width: 50%;
     height: auto;
     position: absolute;
     top: 0;left: 0;right: 0; bottom:0;
     margin: auto;
-    filter: blur(0);
-
+    
 }
 .center .image
 {
     width: 100%;
-    height: 90%;
+    height:auto;
     
 }
 .position
@@ -43,8 +38,6 @@ body
     
     font-size: 30px;
 }
-
-
 .social
 {    
     font-size: 20px;
