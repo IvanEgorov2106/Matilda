@@ -1,6 +1,5 @@
 body::before 
     {
-        z-index: -1;
         content: '';
         position: fixed; 
         left: 0; right: 0;
@@ -81,7 +80,8 @@ textarea
     width: 100%;
 }
 button
-{    
+{
+   
     background-color: red;
      color:white;
 }
