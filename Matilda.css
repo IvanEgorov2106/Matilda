@@ -1,39 +1,36 @@
 body::before 
     {
-    content: '';
-    position: fixed; 
-    left: 0; right: 0;
-    top: 0; bottom: 0; 
-    background: url(picture/Girl.jpg) center / cover no-repeat;
-    z-index: 0;   
-    filter: blur(5px); /* Размытие */
+        z-index: -1;
+        content: '';
+        position: fixed; 
+        left: 0; right: 0;
+        top: 0; bottom: 0; 
+        background: url(picture/Girl.jpg) center / cover no-repeat; 
+        filter: blur(5px); /* Размытие */ 
+          
+
     }
 
  .center
 {
-
     font-family: 'Times New Roman', Times, serif;
     background-color: aliceblue;
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 0;left: 0;right: 0; bottom:0;
-    margin: auto;
-    
+    width: 50%;    
+    position:relative;    
+    padding-bottom: 20px;
+    margin:  0 auto;    
 }
+
 .center .image
 {
-    width: 100%;
-    height:auto;
-    
+    width: 100%;     
 }
 .position
 {
-    margin: 30px;
+    margin: 10px 30px;
 }
 .position h2
-{
-    
+{    
     font-size: 30px;
 }
 .social
@@ -53,23 +50,44 @@ body::before
 }
 .historyMessage ul
 {
+    padding: 0;
+    margin: 0;
+    
+}
+.historyMessage li
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
     list-style-type: none;
     padding-left: 0;
 }
-.historyMessage img
+.userPhoto
 {
-    float: left;
-    margin: 0 5px 0 10px;
-    width: 10%;
-    height: auto;
+       width: 15%; 
+       margin: 0px 5px 0px 0px; 
 }
-.historyMessage h2
+form
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+textarea
+{
+    display: block;
+    width: 100%;
+}
+button
+{    
+    background-color: red;
+     color:white;
+}
+h2.userNick
 {
     font-size: 20px;
-    font-weight: normal;    
-}
-.historyMessage p
-{
-    
-  
+    font-weight: normal;
+    margin: 0;
 }
