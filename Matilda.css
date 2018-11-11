@@ -33,9 +33,15 @@ body::before
     font-size: 30px;
 }
 .social
-{    
+{   display: flex;
+    flex-direction: row; 
     font-size: 20px;
-    font-weight: normal;  
+    font-weight: normal; 
+    
+}
+.social div
+{
+    margin: 10px;
 }
 .social img
 {
@@ -74,16 +80,26 @@ form
     justify-content: flex-start;
     align-items: center;
 }
+form div
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    
+}
 textarea
 {
-    display: block;
-    width: 100%;
+    
+    width: 375px;
+    height: 138px;
+    resize: none;
 }
 button
-{
-   
+{  
+    align-self: flex-end;
     background-color: red;
-     color:white;
+    color:white;
+    width: 50%; 
 }
 h2.userNick
 {
