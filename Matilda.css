@@ -94,11 +94,15 @@ body::before {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-
+  align-items: flex-start;  
   list-style-type: none;
   padding-left: 0;
   
+}
+.historyMessage li div
+{
+  flex-basis: 100%;
+  background-color: #bd1921;
 }
 div h2.userNick {
   font-size: 14px;
@@ -110,12 +114,13 @@ div h2.userNick {
  
 }
 
-.historyMessage p {
-  margin: 0px;
+.historyMessage p 
+{  display: block;
+   margin: 0px;
   padding: 0px;
   font-size: 13px;
   color: #3f4041;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova";  
 }
 
 form {
@@ -165,4 +170,10 @@ button {
   color: #ffffff;
   font-family: "Proxima Nova";
   font-weight: bold;
+}
+object
+{
+  width: 46px;
+  height: 40x;
+  color: #bd1921;
 }
